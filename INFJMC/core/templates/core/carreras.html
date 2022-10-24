@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-</head>
-<body>
-    <h1>Carreras</h1>
-    <hr>
-    <ul>
-        <li><a href='http://127.0.0.1:8000/'>Inicio</a></li>
-        <li><a href='http://127.0.0.1:8000/carreras/'>Carreras</a></li>
-        <li><a href='http://127.0.0.1:8000/docentes/'>Docentes</a></li>
-    </ul>
-    <hr>
-    <p> Lorem ipsum dolor sit amet. </p>
+{% extends 'core/base.html' %}
 
-</body>
-</html>
+{% block title %}
+Carreras
+{% endblock %}
+
+{% block header%}
+<h2>Informatica USM | Carreras</h2>
+{% endblock%}
+
+{% block content %}
+<p>{% lorem 20 w%}</p>
+{% endblock %}
